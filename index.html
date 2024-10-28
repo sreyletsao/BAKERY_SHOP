@@ -4,28 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cakery Charm</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <nav>
         <div class="nav-left">
-            <img src="" alt="">
+            <img src="./images/nav/logo.png" alt="Cakery Charm Logo">
+            <span>Cakery Charm</span>
         </div>
-        <div class="nc-right">
+        <div class="nav-right">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="./pages/about.html">About</a></li>
-                <li><a href="./pages/contact.html">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="cart-icon">🛒</a></li>
             </ul>
         </div>
     </nav>
-    <main>
-        
-    </main>
-    <footer>footer</footer>
-    <img src="images/image.png" alt="">
+    <div class="w3-content w3-section">
+        <img class="mySlides" src="./images/nav/morning.png" style="width:100%">
+        <img class="mySlides" src="./images/nav/afternoon.png" style="width:100%">
+        <img class="mySlides" src="./images/nav/evening.png" style="width:100%">
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 5000); // Change image every 2 seconds
+        }
+    </script>
+
+    <section class="welcome-section">
+        <h2>Welcome To CAKERY CHARM Bakery Shop</h2>
+        <p>Welcome to our bakery. Whether you're stopping by for a morning coffee or planning a special celebration, our
+            bakery is here to delight your taste buds and create sweet moments. Come visit us and indulge in the warmth
+            of freshly baked goodness!</p>
+    </section>
 </body>
 
 </html>
