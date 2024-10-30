@@ -16,6 +16,9 @@ nav {
   align-items: center;
   padding: 10px 20px;
   background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 nav .nav-left {
   display: flex;
@@ -23,14 +26,15 @@ nav .nav-left {
   font-weight: bold;
   color: #d9534f;
 }
-nav .nav-left img {
-  width: 70px;
-  height: 70px;
+nav .nav-left .logo {
+  width: 50px;
+  height: 50px;
   margin-right: 10px;
 }
 nav .nav-right ul {
   display: flex;
-  list-style-type: none;
+  list-style: none;
+  margin-right: 20px;
 }
 nav .nav-right ul li {
   margin-left: 20px;
@@ -39,18 +43,18 @@ nav .nav-right ul li a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
 }
-
-.cart-icon {
-  font-size: 1.2em;
+nav .nav-right ul li a:hover {
+  color: #d9534f;
 }
 
 .w3-content {
   max-width: 100%;
   position: relative;
 }
-
-.mySlides {
+.w3-content .mySlides {
   display: none;
 }
 
@@ -61,15 +65,164 @@ nav .nav-right ul li a {
   color: #333;
 }
 .welcome-section h2 {
-  font-size: 2em;
+  font-size: 32px;
   color: #d9534f;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
 .welcome-section p {
-  font-size: 1em;
+  font-size: 16px;
   line-height: 1.6;
   color: #666;
   max-width: 600px;
   margin: 0 auto;
+}
+
+.product-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+}
+.product-section h2 {
+  font-size: 28px;
+  color: #d9534f;
+  margin-bottom: 5px;
+}
+.product-section p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.category-grid {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+
+.category-item {
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+  background: #f3f3f3;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.category-item .card {
+  height: 80%;
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.category-item span {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ff918d;
+}
+.category-item:hover .card {
+  transform: translateY(-25%);
+  box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+}
+
+.popular-bakery {
+  text-align: center;
+  padding: 20px;
+  background-color: #f3e6e6;
+  color: #333;
+}
+.popular-bakery h2 {
+  font-size: 28px;
+  color: #d9534f;
+  margin-bottom: 5px;
+}
+.popular-bakery p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.bakery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+
+.bakery-item {
+  width: 300px;
+  height: 350px;
+  text-align: center;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 20px;
+}
+.bakery-item .card {
+  height: 80%;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+.bakery-item span {
+  font-weight: bold;
+  color: #333;
+  display: block;
+}
+.bakery-item p {
+  font-weight: bold;
+  color: #ff918d;
+}
+
+.button-group {
+  margin: 30px 0 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.button-group button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #d9534f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button-group button:hover {
+  background-color: #c9302c;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f7e6e6;
+  padding: 20px;
+  color: #333;
+}
+footer .footer-section {
+  flex: 2;
+}
+footer .footer-section h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+footer .footer-section p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+footer .footer-section .social-media p {
+  display: flex;
+  align-items: center;
+}
+footer .about-us {
+  margin-left: 3%;
+}
+footer .contact-us {
+  margin-left: 14%;
+}
+footer .social-media {
+  margin-left: 10%;
 }/*# sourceMappingURL=main.css.map */
