@@ -11,22 +11,22 @@
 <body>
     <nav>
         <div class="nav-left">
-            <img src="./images/nav/logo.png" alt="Cakery Charm Logo">
+            <img class="logo" src="./images/logo.png" alt="Cakery Charm Logo">
             <span>Cakery Charm</span>
         </div>
         <div class="nav-right">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href=".//pages/about.html">About</a></li>
-                <li><a href=".//pages/contact.html">Contact</a></li>
-                <li><a href="#" class="cart-icon">🛒</a></li>
+                <li><a href="./pages/about.html">About</a></li>
+                <li><a href="./pages/contact.html">Contact</a></li>
+                <li><a href="./pages/menu.html">Menu</a></li>
             </ul>
         </div>
     </nav>
     <div class="w3-content w3-section">
-        <img class="mySlides" src="./images/nav/morning.png" style="width:100%">
-        <img class="mySlides" src="./images/nav/afternoon.png" style="width:100%">
-        <img class="mySlides" src="./images/nav/evening.png" style="width:100%">
+        <img class="mySlides" src="./images/morning.png" style="width:100%">
+        <img class="mySlides" src="./images/afternoon.png" style="width:100%">
+        <img class="mySlides" src="./images/evening.png" style="width:100%">
     </div>
 
     <script>
@@ -42,7 +42,7 @@
             myIndex++;
             if (myIndex > x.length) { myIndex = 1 }
             x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 5000); // Change image every 2 seconds
+            setTimeout(carousel, 3000);
         }
     </script>
 
@@ -52,6 +52,90 @@
             bakery is here to delight your taste buds and create sweet moments. Come visit us and indulge in the warmth
             of freshly baked goodness!</p>
     </section>
+    <section class="product-section">
+        <h2>Product</h2>
+        <p>Browse our top categories here to discover different food cuisines.</p>
+        <div class="category-grid">
+            <div class="category-item">
+                <img class="card" src="./images/drink.png" alt="Drinks">
+                <span>DRINK</span>
+            </div>
+            <div class="category-item">
+                <img class="card" src="./images/cake.png" alt="Cakes">
+                <span>CAKE</span>
+            </div>
+            <div class="category-item">
+                <img class="card" src="./images/brand.png" alt="Breads">
+                <span>BREAD</span>
+            </div>
+            <div class="category-item">
+                <img class="card" src="./images/sandwiche.png" alt="Sandwiches">
+                <span>SANDWICH</span>
+            </div>
+        </div>
+    </section>
+    <section class="popular-bakery">
+        <h2>Popular Bakery</h2>
+        <p>Find nearby popular bakery items</p>
+        <div class="bakery-grid">
+            <div class="bakery-item">
+                <img class="card" src="./images/baguette.png" alt="Baguette">
+                <span>BAGUETTE</span>
+                <p>$2.5</p>
+            </div>
+            <div class="bakery-item">
+                <img class="card" src="./images/chocolate.png" alt="Chocolate">
+                <span>CHOCOLATE</span>
+                <p>$3.5</p>
+            </div>
+            <div class="bakery-item">
+                <img class="card" src="./images/multigrain.png" alt="Multigrain">
+                <span>MULTIGRAIN</span>
+                <p>$2.4</p>
+            </div>
+            <div class="bakery-item">
+                <img class="card" src="./images/strawberry drink.png" alt="Strawberry">
+                <span>STRAWBERRY</span>
+                <p>$1.5</p>
+            </div>
+            <div class="bakery-item">
+                <img class="card" src="./images/sandwich.png" alt="Sandwich">
+                <span>SANDWICH</span>
+                <p>$1.5</p>
+            </div>
+            <div class="bakery-item">
+                <img class="card" src="./images/craqelin.png" alt="Cragelin Pastry">
+                <span>CRAQELIN</span>
+                <p>$1.5</p>
+            </div>
+        </div>
+        <div class="button-group">
+            <button><a href="./pages/menu.html">See full menu</a></button>
+            <button><a href="./pages/contact.html">Order now</a></button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-section about-us">
+            <h2>About Us</h2>
+            <p>Where fresh, delicious treats are baked daily. We specialize in artisan bread and pastries, using only
+                the finest ingredients to ensure every bite is perfect.</p>
+            <h2>Open Hours</h2>
+            <p>Monday-Saturday:7:00 AM-9:00 PM</p>
+            <p>Sunday: 8:00 AM - 7:00 PM</p>
+        </div>
+        <div class="footer-section contact-us">
+            <h2>Contact Us</h2>
+            <p>📞 123-456-789</p>
+            <p>📍 Phnom Penh</p>
+            <p>✉️ cakerycharm@gmail.com</p>
+        </div>
+        <div class="footer-section social-media">
+            <h2>Social Media</h2>
+            <p>📘 cakerycharm</p>
+            <p>📸 cakerycharm</p>
+            <p>📱 cakerycharm</p>
+        </div>
+    </footer>
 </body>
 
 </html>
