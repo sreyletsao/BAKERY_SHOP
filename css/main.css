@@ -118,7 +118,7 @@ nav .nav-right ul li a:hover {
   font-weight: 900;
   font-size: 18px;
   line-height: 1.5;
-  color: #ff918d;
+  color: #e8505b;
 }
 .category-item:hover .card {
   transform: translateY(-25%);
@@ -170,7 +170,7 @@ nav .nav-right ul li a:hover {
 }
 .bakery-item p {
   font-weight: bold;
-  color: #ff918d;
+  color: #e8505b;
 }
 
 .button-group {
@@ -205,12 +205,12 @@ footer .footer-section {
 }
 footer .footer-section h2 {
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 10px;
   color: #333;
 }
 footer .footer-section p {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.5;
 }
 footer .footer-section .social-media p {
@@ -225,4 +225,56 @@ footer .contact-us {
 }
 footer .social-media {
   margin-left: 10%;
+}
+
+.menu {
+  width: 100%;
+  text-align: center;
+  background-color: #f7e6e6;
+}
+.menu h2 {
+  font-size: 24px;
+  color: #e8505b;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.menu .description {
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.grid .item {
+  background-color: #fff;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 30%;
+}
+.grid .item img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.grid .item p {
+  font-weight: bold;
+  color: #333;
+  padding-top: 10px;
+  text-transform: uppercase;
+}
+.grid .item span {
+  color: #e8505b;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */
