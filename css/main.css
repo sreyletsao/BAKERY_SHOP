@@ -389,16 +389,23 @@ footer .social-media {
   margin-bottom: 10px;
 }
 .feedback-location .feedback-container .feedback-form input[type=email], .feedback-location .feedback-container .location-map input[type=email] {
-  width: 100%;
+  width: 500px;
   padding: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   border-radius: 20px;
   background: gainsboro;
 }
 .feedback-location .feedback-container .feedback-form textarea, .feedback-location .feedback-container .location-map textarea {
-  width: 100%;
+  width: 500px;
+  margin-top: 10px;
   height: 30vh;
+  padding: 10px;
   border-radius: 20px;
   background: gainsboro;
+}
+.feedback-location .feedback-container .feedback-form label, .feedback-location .feedback-container .location-map label {
+  margin-left: 10px;
 }
 .feedback-location .feedback-container .feedback-form button, .feedback-location .feedback-container .location-map button {
   background: palevioletred;

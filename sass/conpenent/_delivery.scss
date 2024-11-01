@@ -110,6 +110,7 @@
   .feedback-container {
     display: flex;
     gap: 50px;
+  
 
     .feedback-form, .location-map {
       flex: 1;
@@ -126,19 +127,25 @@
       }
 
       input[type="email"] {
-        width: 100%;
+        width: 500px;
         padding: 20px;
+        margin-bottom: 10px;
+        margin-top: 10px;
         border-radius: $border-radius;
         background: $input-background;
       }
 
       textarea {
-        width: 100%;
+        width: 500px;
+        margin-top: 10px;
         height: 30vh;
+        padding: 10px;
         border-radius: $border-radius;
         background: $input-background;
       }
-
+      label{
+        margin-left: 10px;
+      }
       button {
         background: $primary-color;
         color: white;
