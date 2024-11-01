@@ -1,5 +1,3 @@
-
-
 .main-container {
   height: 100vh;
   display: flex;
@@ -7,7 +5,7 @@
   padding: 50px;
   background-image: url(/images/bg.png);
   background-size: cover;
-  
+
 }
 
 .delivery-form {
@@ -20,27 +18,34 @@
   border-radius: 8px;
   width: 500px;
   height: 60vh;
-  
 
-  h3, p {
+
+  h3,
+  p {
     display: flex;
     justify-content: center;
     font-size: 20px;
     color: $text-color;
   }
 
-  .name, .num {
+  .name,
+  .num {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 
-    .first, .last, .phone, .location {
+    .first,
+    .last,
+    .phone,
+    .location {
       flex: 1;
       margin-right: 15px;
     }
   }
 
-  input[type="text"], input[type="email"], textarea {
+  input[type="text"],
+  input[type="email"],
+  textarea {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
@@ -78,23 +83,33 @@
   justify-content: space-between;
 
   .icon-left {
+    display: flex;
+
+    h3 {
+      display: flex;
+      align-items: center;
+      color: palevioletred;
+      margin-left: 5px;
+    }
+
     img {
       width: 70px;
       height: 70px;
       margin-left: 30px;
     }
   }
+}
 
-  .icon-right {
-    display: flex;
-    align-items: center;
+.icon-right {
+  display: flex;
+  align-items: center;
 
-    img {
-      height: 50px;
-      margin-right: 30px;
-    }
+  img {
+    height: 50px;
+    margin-right: 30px;
   }
 }
+
 
 .feedback-location {
   margin: 20px;
@@ -110,9 +125,10 @@
   .feedback-container {
     display: flex;
     gap: 50px;
-  
 
-    .feedback-form, .location-map {
+
+    .feedback-form,
+    .location-map {
       flex: 1;
       background-color: $color-bg;
       border-radius: $border-radius;
@@ -143,9 +159,11 @@
         border-radius: $border-radius;
         background: $input-background;
       }
-      label{
+
+      label {
         margin-left: 10px;
       }
+
       button {
         background: $primary-color;
         color: white;
