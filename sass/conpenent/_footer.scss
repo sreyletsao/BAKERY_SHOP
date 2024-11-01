@@ -27,16 +27,25 @@ footer {
             }
         }
     }
+    .icon{
+        display: flex;
+    }
+    .icon img{
+        height: 30px;
+        width: 29px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
 
     .about-us {
-        margin-left: 3%;
+        margin-left: 2%;
     }
 
     .contact-us {
-        margin-left: 14%;
+        margin-left: 20%;
     }
 
     .social-media {
-        margin-left: 10%;
+        margin-left: 20%;
     }
 }
