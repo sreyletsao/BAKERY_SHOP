@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f7e6e6;
+}
+@import "conpenent/nav";
+@import "conpenent/container";
+@import "conpenent/footer";
+@import "conpenent/main";
+@import "conpenent/group-icon";
+@import "conpenent/knowlage";
