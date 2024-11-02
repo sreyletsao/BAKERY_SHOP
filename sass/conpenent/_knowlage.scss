@@ -12,6 +12,7 @@
         }
     }
     .bakery-rigth{
+        text-align: center;
         .btn{
             button{
                 font-size: 20px;
@@ -31,32 +32,80 @@
         justify-content: center;
         align-items: center;
         font-size: 20px;
-        
+        margin-bottom: 30px;
     }
 }
 .text{
     background-color: white;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "knowlage_icon_1 knowlage_icon_2 knowlage_icon_3";
     padding: 20px;
     gap: 10px;
     height: 30vh;
-    .knowlage_icon_1{
+    text-align: center;
+    h1{
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 10px;
-        p{
-            width: 70%;
-        }
-        h1{
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        
+    }
+    p{
+        width: 70%;
+        text-align: center;
+    }
+    h4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+    .knowlage_icon_1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .knowlage_icon_2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .knowlage_icon_3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
-            width: 50px;
-            height: 50vh;
-            border-radius: 50px;
-            border: 1px  solid green;
-            text-align: center;
+}
+
+.bread{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    .bread_left{
+        flex: 1;
+        img{
+            width: 90%;
         }
     }
+    .bread_right{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: self-start;
+        width: 30%;
+        padding: 30px;
+        gap: 10px;
+    }
 }
+
