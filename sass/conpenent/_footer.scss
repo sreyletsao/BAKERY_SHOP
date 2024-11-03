@@ -1,12 +1,21 @@
 footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: $footer-bg-color;
     padding: 20px;
     color: $text-color;
-
+    a {
+        color: $text-color;
+        text-decoration: none;
+    }
     .footer-section {
         flex: 2;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        
 
         h2 {
             text-transform: uppercase;
@@ -27,10 +36,12 @@ footer {
             }
         }
     }
-    .icon{
+
+    .icon {
         display: flex;
     }
-    .icon img{
+
+    .icon img {
         height: 30px;
         width: 29px;
         margin-bottom: 10px;
@@ -47,5 +58,49 @@ footer {
 
     .social-media {
         margin-left: 20%;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        justify-content: start;
+        
+        .footer-section {
+            flex: 1;
+            margin: 10px 0;
+            width: 100%;
+            text-align: center;
+            text-align: left;
+            justify-content: start;
+        }
+
+        .about-us,
+        .contact-us,
+        .social-media {
+            margin-left: 0;
+            width: 100%;
+        }
+
+        .icon {
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 480px) {
+        padding: 10px;
+
+        .footer-section {
+            h2 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .icon img {
+            height: 25px;
+            width: 24px;
+        }
     }
 }
