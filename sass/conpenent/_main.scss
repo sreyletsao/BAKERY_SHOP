@@ -1,6 +1,6 @@
 .main{
     display: flex;
-    height: 50vh;
+    height:fit-content;
     padding: 0 50px 50px 200px;
     gap: 200px;
     .main-left{
@@ -9,11 +9,19 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 20px;
+        padding-top: 30px;
+        h2{
+            margin-top: 70px;
+            width:130%;
+        }
+        p{
+            width: 120%;
+        }
     }
     .main-rigth{
 
         flex: 2;
+        margin-top: 70px;
         display: flex;
         img{
             width: 400px;
