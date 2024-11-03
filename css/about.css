@@ -10,6 +10,9 @@ body {
   color: #333;
   background-color: #f7e6e6;
 }
+body p {
+  font-size: 1rem;
+}
 
 nav {
   display: -webkit-box;
@@ -96,7 +99,9 @@ nav .nav-right ul li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 85vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   padding: 80px 80px 0 80px;
 }
 .container .images {
@@ -108,8 +113,8 @@ nav .nav-right ul li a:hover {
           flex: 1.5;
 }
 .container .images img {
-  width: 500px;
-  height: 420px;
+  width: 80%;
+  height: 80%;
 }
 .container .card {
   display: -webkit-box;
@@ -124,13 +129,18 @@ nav .nav-right ul li a:hover {
           flex-direction: column;
   gap: 20px;
 }
+.container .card p:not(.card1 p, .card2 p) {
+  font: bold 1.1rem "calibri", sans-serif;
+}
 .container .card .card1 {
   text-align: center;
   background: gray;
   color: white;
   padding: 35px;
   width: 80%;
-  height: 20vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -144,10 +154,12 @@ nav .nav-right ul li a:hover {
 .container .card .card2 {
   background: gray;
   color: white;
-  padding: 35px;
+  padding: 20px;
   text-align: center;
   width: 80%;
-  height: 20vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -160,7 +172,11 @@ nav .nav-right ul li a:hover {
 }
 .container .card h5 {
   color: orange;
-  font-size: 40px;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+.container .card p {
+  font: 100 1rem "calibri", sans-serif;
 }
 
 footer {
@@ -222,7 +238,10 @@ footer .social-media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 50vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #e1d3d3;
   padding: 0 50px 50px 200px;
   gap: 200px;
 }
@@ -237,13 +256,21 @@ footer .social-media {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+}
+.main .main-left h2 {
+  font-family: "Calibri", sans-serif;
+  font-size: 1.7rem;
+}
+.main .main-left p {
+  font-family: "Calibri", sans-serif;
+  line-height: 1.5;
 }
 .main .main-rigth {
   -webkit-box-flex: 2;
@@ -254,8 +281,7 @@ footer .social-media {
   display: flex;
 }
 .main .main-rigth img {
-  width: 400px;
-  height: 250px;
+  width: 80%;
 }
 
 .group-icon {
@@ -284,8 +310,12 @@ footer .social-media {
 .group-icon .icon-1 * {
   margin-bottom: 20px;
 }
+.group-icon .icon-1 h2 {
+  font-family: "Calibri", sans-serif;
+}
 .group-icon .icon-1 span {
   text-align: center;
+  font-family: "Calibri", sans-serif;
 }
 
 .knowlage {
@@ -302,6 +332,10 @@ footer .social-media {
   margin: 50px;
   border-radius: 20px;
   color: white;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 15px;
 }
 .knowlage .bakery-left img {
   width: 30%;
@@ -309,16 +343,7 @@ footer .social-media {
 .knowlage .bakery-rigth {
   text-align: center;
 }
-.knowlage .bakery-rigth .btn button {
-  font-size: 20px;
-  width: 30%;
-  height: 30px;
-  border-radius: 10px;
-  background-color: rgb(245, 174, 186);
-  color: white;
-}
-
-.pg p {
+.knowlage .bakery-rigth .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,7 +353,30 @@ footer .social-media {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+.knowlage .bakery-rigth .btn button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 20px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  background-color: rgb(245, 174, 186);
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.pg p {
+  font-family: "Calibri", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -339,10 +387,13 @@ footer .social-media {
   grid-template-areas: "knowlage_icon_1 knowlage_icon_2 knowlage_icon_3";
   padding: 20px;
   gap: 10px;
-  height: 30vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   text-align: center;
 }
 .text h1 {
+  font-family: "Calibri", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -358,7 +409,9 @@ footer .social-media {
   border: 1px solid black;
 }
 .text p {
+  font-family: "Calibri", sans-serif;
   width: 70%;
+  line-height: 1.5;
   text-align: center;
 }
 .text h4 {
@@ -441,7 +494,7 @@ footer .social-media {
           flex: 1;
 }
 .bread .bread_left img {
-  width: 90%;
+  width: 100%;
 }
 .bread .bread_right {
   -webkit-box-flex: 1;
