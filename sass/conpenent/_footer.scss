@@ -1,11 +1,22 @@
 footer {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-around;
     background-color: $footer-bg-color;
     padding: 20px;
     color: $text-color;
-
+    margin-left: 60px;
+    a {
+        color: $text-color;
+        text-decoration: none;
+    }
     .footer-section {
+        width: 20%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        
 
         h2 {
             text-transform: uppercase;
@@ -41,6 +52,7 @@ footer {
 
     .about-us {
         width: 30%;
+        padding-right: 40px;
 
     }
 
@@ -167,4 +179,46 @@ footer {
             margin-left: 1%;
         }
     }
+
+    @media (max-width: 768px) {
+        
+        .footer-section {
+            flex: 1;
+            margin: 10px 0;
+            width: 100%;
+            text-align: center;
+            text-align: left;
+            justify-content: start;
+        }
+
+        .about-us,
+        .contact-us,
+        .social-media {
+            margin-left: 0;
+            width: 100%;
+        }
+
+        .icon {
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 480px) {
+
+        .footer-section {
+            h2 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .icon img {
+            height: 25px;
+            width: 24px;
+        }
+    }
 }
+
